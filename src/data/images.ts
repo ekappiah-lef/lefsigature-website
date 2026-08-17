@@ -3,7 +3,7 @@
  *
  * The reference designs load imagery from Google's CDN. Keeping every URL in
  * one place means the entire site can be re-pointed at self-hosted assets
- * (e.g. `/images/lef-signature-hero.webp`) by editing this file alone — no
+ * (e.g. `/images/lef-signature-hero.webp`) by editing this file alone   no
  * component changes required. `next.config.mjs` allow-lists the CDN host.
  */
 const CDN = "https://lh3.googleusercontent.com/aida-public";

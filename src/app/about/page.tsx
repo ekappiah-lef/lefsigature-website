@@ -44,7 +44,7 @@ export default function AboutPage() {
         badge="About Us"
         badgeVariant="green"
         title="Why Choose Us?"
-        description="A dynamic, multidisciplinary engineering and consultancy firm headquartered in Accra, Ghana — turning ideas into reality with precision, passion, and professionalism."
+        description="A dynamic, multidisciplinary engineering and consultancy firm headquartered in Accra, Ghana   turning ideas into reality with precision, passion, and professionalism."
       />
 
       <section className="py-20">
@@ -85,7 +85,7 @@ export default function AboutPage() {
                 </p>
                 <p>
                   With over 20 years of experience in technology and engineering, we offer end-to-end
-                  services from concept to deployment and maintenance — positioning ourselves as a
+                  services from concept to deployment and maintenance   positioning ourselves as a
                   trusted partner in Ghana&apos;s infrastructure and technology development sectors.
                 </p>
               </div>
@@ -134,7 +134,7 @@ export default function AboutPage() {
               We are on a mission to transform how businesses and communities interact with
               technology. By combining our expertise in ICT services and engineering with a
               commitment to environmental responsibility, we create pathways for our clients to
-              thrive amidst rapid change — providing tailored solutions that promote sustainable
+              thrive amidst rapid change   providing tailored solutions that promote sustainable
               infrastructure and digital evolution.
             </p>
           </div>

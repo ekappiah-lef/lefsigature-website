@@ -75,7 +75,7 @@ export const serviceDivisions: ServiceDivision[] = [
     id: "software-development",
     division: "Division 03",
     title: "Software Development",
-    lead: "We deliver custom software that empowers businesses with efficient, scalable, and future-ready technology tailored to their needs. We build custom web and mobile applications, ERP systems, and document management solutions — leveraging advanced technologies such as AI and machine learning, and supporting our solutions with corporate training.",
+    lead: "We deliver custom software that empowers businesses with efficient, scalable, and future-ready technology tailored to their needs. We build custom web and mobile applications, ERP systems, and document management solutions   leveraging advanced technologies such as AI and machine learning, and supporting our solutions with corporate training.",
     textFirst: true,
     steps: [
       "Custom Software Solutions",
@@ -92,7 +92,7 @@ export const serviceDivisions: ServiceDivision[] = [
     id: "construction",
     division: "Division 04",
     title: "Building & Road Construction",
-    lead: "We deliver high-quality construction and civil engineering solutions that strengthen infrastructure, improve community connectivity, and support sustainable development. With expert planning, execution, and maintenance, we manage projects of all scales — from simple structures to complex infrastructure.",
+    lead: "We deliver high-quality construction and civil engineering solutions that strengthen infrastructure, improve community connectivity, and support sustainable development. With expert planning, execution, and maintenance, we manage projects of all scales   from simple structures to complex infrastructure.",
     textFirst: false,
     iconBoxes: [
       {

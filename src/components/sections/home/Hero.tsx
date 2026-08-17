@@ -49,7 +49,7 @@ export function Hero() {
           </h1>
           <p className="body-lg mb-12 max-w-2xl text-content-variant">
             A multidisciplinary engineering and technology company delivering innovative,
-            reliable, and future-ready solutions across Ghana — from data centres and electrical
+            reliable, and future-ready solutions across Ghana   from data centres and electrical
             engineering to software and construction.
           </p>
           <div className="flex flex-wrap gap-4">

@@ -13,7 +13,7 @@ import { breadcrumbSchema } from "@/lib/structured-data";
 export const metadata: Metadata = buildMetadata({
   title: "Industries",
   description:
-    "The sectors LEF Signature serves across Ghana — energy & power, telecommunications, ICT & data centres, construction & infrastructure, water & sanitation, and public & private sector clients.",
+    "The sectors LEF Signature serves across Ghana   energy & power, telecommunications, ICT & data centres, construction & infrastructure, water & sanitation, and public & private sector clients.",
   path: "/industries",
 });
 

@@ -9,7 +9,7 @@ const config: Config = {
           DEFAULT: "#000d23",
           container: "#0b2343",
           on: "#ffffff",
-          // Text on dark/blue backgrounds — lightened for readable contrast.
+          // Text on dark/blue backgrounds   lightened for readable contrast.
           "on-container": "#cdd8ec",
           // Original muted tone, kept for borders/subtle accents on dark.
           "border-muted": "#5f74a0",

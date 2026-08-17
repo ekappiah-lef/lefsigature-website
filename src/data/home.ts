@@ -2,7 +2,7 @@ import { Bolt, Server, Code2, HardHat, ShieldCheck, Cog, Brain, Handshake } from
 import { images } from "@/data/images";
 import type { Advantage, CoreService, Stat } from "@/types";
 
-/** "Our Numbers" — sourced from lefsignature.com. */
+/** "Our Numbers"   sourced from lefsignature.com. */
 export const stats: Stat[] = [
   {
     index: "01",

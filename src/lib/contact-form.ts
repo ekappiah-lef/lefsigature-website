@@ -17,7 +17,7 @@ export interface InquiryResult {
  * Submission is intentionally isolated here so a real backend can be connected
  * without touching the form UI. To go live, replace the simulated call below
  * with a POST to a Next.js Route Handler or a Server Action that forwards the
- * payload to your email provider. Keep provider API keys server-side only —
+ * payload to your email provider. Keep provider API keys server-side only  
  * never reference them from this client-reachable module.
  */
 export async function sendInquiry(payload: InquiryPayload): Promise<InquiryResult> {

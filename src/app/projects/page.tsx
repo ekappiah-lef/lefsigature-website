@@ -11,7 +11,7 @@ import { breadcrumbSchema } from "@/lib/structured-data";
 export const metadata: Metadata = buildMetadata({
   title: "Projects",
   description:
-    "Projects we've delivered across Ghana — road construction in Tamale, the Peak Logistics Center in Takoradi, Angela Residence, the Kumasi water line, and data centre works.",
+    "Projects we've delivered across Ghana   road construction in Tamale, the Peak Logistics Center in Takoradi, Angela Residence, the Kumasi water line, and data centre works.",
   path: "/projects",
 });
 
@@ -29,7 +29,7 @@ export default function ProjectsPage() {
         badge="Portfolio"
         badgeVariant="blue"
         title="We Build Projects That Last."
-        description="Strategic engineering, construction, and technology projects delivered across Ghana — built for quality, connectivity, and long-term value."
+        description="Strategic engineering, construction, and technology projects delivered across Ghana   built for quality, connectivity, and long-term value."
       />
 
       <ProjectsGrid />

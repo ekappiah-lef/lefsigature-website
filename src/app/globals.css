@@ -343,7 +343,7 @@
   }
 
   /* ============================================================
-     ADVANTAGE (home) — dark section cards
+     ADVANTAGE (home)   dark section cards
      ============================================================ */
   .adv-card {
     padding: 24px;
@@ -357,7 +357,7 @@
   }
 
   /* ============================================================
-     APP DOWNLOAD (home) — phone mock + store badges
+     APP DOWNLOAD (home)   phone mock + store badges
      ============================================================ */
   .app-sec::before {
     content: "";
@@ -455,7 +455,7 @@
   }
 
   /* ============================================================
-     SERVICES PAGE — divider, feature list, image frames, panels
+     SERVICES PAGE   divider, feature list, image frames, panels
      ============================================================ */
   .divider-row {
     display: flex;
@@ -594,7 +594,7 @@
   }
 
   /* ============================================================
-     PROJECTS PAGE — media cards, overlay, filters, timeline
+     PROJECTS PAGE   media cards, overlay, filters, timeline
      ============================================================ */
   .filter-btn {
     padding: 8px 24px;
@@ -696,7 +696,7 @@
   }
 
   /* ============================================================
-     CONTACT PAGE — office card, map, support, form fields
+     CONTACT PAGE   office card, map, support, form fields
      ============================================================ */
   .office-card {
     position: relative;

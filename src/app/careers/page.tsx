@@ -74,7 +74,7 @@ export default function CareersPage() {
         <Container>
           <SectionHeading
             title="Work With Us"
-            description="We're always interested in meeting talented engineers and technologists — and in partnering with reliable subcontractors on our projects."
+            description="We're always interested in meeting talented engineers and technologists   and in partnering with reliable subcontractors on our projects."
             className="mx-auto max-w-xl"
           />
           <div className="mt-8 flex flex-col items-center justify-center gap-6 sm:flex-row">

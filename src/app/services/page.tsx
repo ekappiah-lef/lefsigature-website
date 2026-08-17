@@ -34,7 +34,7 @@ export default function ServicesPage() {
         badge="Our Capabilities"
         badgeVariant="green"
         title="Engineering & Technology Solutions."
-        description="We offer a range of services to meet all types of needs — from critical electrical infrastructure and data centres to software and large-scale construction."
+        description="We offer a range of services to meet all types of needs   from critical electrical infrastructure and data centres to software and large-scale construction."
       >
         <div className="flex flex-wrap items-center gap-6">
           <Link href="#electrical-engineering" className="btn btn-blue">

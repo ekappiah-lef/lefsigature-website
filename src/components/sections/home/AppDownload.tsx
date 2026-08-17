@@ -4,7 +4,7 @@ import type { LucideIcon } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 
 /**
- * LefPower app store links. Fill these in once the app is published — badges
+ * LefPower app store links. Fill these in once the app is published   badges
  * render as active links when a URL is present and as inert (accessible)
  * placeholders otherwise, so the layout never ships a dead "#" link.
  */

@@ -9,7 +9,7 @@ import {
 import type { Industry } from "@/types";
 
 /**
- * Sectors served — composed from the service areas LEF Signature lists across
+ * Sectors served   composed from the service areas LEF Signature lists across
  * its site (energy, telecoms, ICT/data centres, construction, water &
  * sanitation, and public/private sector clients).
  */

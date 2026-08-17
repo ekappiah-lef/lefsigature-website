@@ -17,13 +17,13 @@ export const projectFilters: Array<{ label: string; value: ProjectCategory | "al
   { label: "ICT", value: "ICT" },
 ];
 
-/** Featured projects — sourced from lefsignature.com/projects. */
+/** Featured projects   sourced from lefsignature.com/projects. */
 export const projects: Project[] = [
   {
     index: "01",
     category: "Construction",
     eyebrow: "Construction • Tamale",
-    title: "Road Construction — Tamale",
+    title: "Road Construction   Tamale",
     image: `${WIX}/89238f5335504d239408fb381de8c4cb.jpg`,
     imageAlt: "Road construction project in Tamale",
     span: "wide",
@@ -33,7 +33,7 @@ export const projects: Project[] = [
     index: "02",
     category: "Construction",
     eyebrow: "Construction • Takoradi",
-    title: "Peak Logistics Center — Takoradi",
+    title: "Peak Logistics Center   Takoradi",
     image: `${WIX}/c837a6_a0437352f7d84bb3b239f03685fb93a7~mv2.jpg`,
     imageAlt: "Peak Logistics Center building in Takoradi",
     span: "narrow",

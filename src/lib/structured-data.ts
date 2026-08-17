@@ -24,7 +24,7 @@ export function organizationSchema() {
       latitude: siteConfig.geo.latitude,
       longitude: siteConfig.geo.longitude,
     },
-    hasCredential: siteConfig.certifications.map((cert) => `${cert.code} — ${cert.label}`),
+    hasCredential: siteConfig.certifications.map((cert) => `${cert.code}   ${cert.label}`),
     ...(sameAs.length ? { sameAs } : {}),
   };
 }

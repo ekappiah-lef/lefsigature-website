@@ -4,7 +4,7 @@ import { siteConfig } from "@/data/site";
 interface PageMetaOptions {
   title: string;
   description: string;
-  /** Path beginning with "/" — used for canonical + OG url. */
+  /** Path beginning with "/"   used for canonical + OG url. */
   path: string;
 }
 
@@ -19,7 +19,7 @@ export function buildMetadata({ title, description, path }: PageMetaOptions): Me
     url: siteConfig.ogImage,
     width: 1200,
     height: 630,
-    alt: `${siteConfig.legalName} — ${siteConfig.tagline}`,
+    alt: `${siteConfig.legalName}   ${siteConfig.tagline}`,
   };
   return {
     title,

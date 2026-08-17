@@ -4,7 +4,7 @@ export interface Testimonial {
   location: string;
 }
 
-/** Client testimonials — sourced from lefsignature.com. */
+/** Client testimonials   sourced from lefsignature.com. */
 export const testimonials: Testimonial[] = [
   {
     quote: "The quality of service and professionalism was top notch.",
@@ -17,7 +17,7 @@ export const testimonials: Testimonial[] = [
     location: "Ho, Volta",
   },
   {
-    quote: "A trustworthy brand — they build trust and work with passion.",
+    quote: "A trustworthy brand   they build trust and work with passion.",
     author: "Pearl Opoku",
     location: "Kasoa, Accra",
   },
