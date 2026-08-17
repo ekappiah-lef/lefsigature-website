@@ -1,0 +1,34 @@
+/**
+ * Centralized image sources.
+ *
+ * The reference designs load imagery from Google's CDN. Keeping every URL in
+ * one place means the entire site can be re-pointed at self-hosted assets
+ * (e.g. `/images/lef-signature-hero.webp`) by editing this file alone — no
+ * component changes required. `next.config.mjs` allow-lists the CDN host.
+ */
+const CDN = "https://lh3.googleusercontent.com/aida-public";
+
+export const images = {
+  home: {
+    hero: `${CDN}/AB6AXuAhKvT9w8yFm9MMv-k-KKjA13GAHUuQGlvtus-rFXI5Iq1NZrsk1hc6Ihct_lmvsTYNEtWEL4DfUKA4DMlnoe4tk27QLZfMzRGOWwLIcGanqK0F859cJEOLL3onALfwZyvE8qmH7O0u2p0H9bQgf0jeTwLurJZ0gR2e_d2vQoaiwFIR_FqKz1pm-bwhUmjpdrdnAr0yEaUohLLfYv0EjtPrTzb_pVGUs3vPkkMJbNUDSplCjoS_nug`,
+    about: `${CDN}/AB6AXuBVOFi2XjZs2NiZ0ZxIsnQD2ajfYivHEowKQhYAf-x0y6Am2a6LZ6QeEsO9Zzw8pPa8rQX8yK2yg3GQ0Si3bmpD6wiHDeYz00Z63NBgW9OnbRc1pKxxMMT_O598PAhKvjDEoTz5rlwHWTfHrnU0cDI14OpDuDuVH5eUsvBq4h8gjOAfH7yyZ50MVBC8-5LYS5EPozvBbybyyY842qK_PUXIbu8wvAp3awvdoVzbTqfIN9exHVhhV2g`,
+    serviceElectrical: `${CDN}/AB6AXuDd0rskFE9ODKyLaNQV5rGmRuh9RgNAzav9tF5dnKjqEI15sDfFEWznTE3DZmtMxlG-2AKDZcbkjGt3VWUYrD2oVAhGYqm3tP_WAgHg4mP1CAHfIgTmx684MxAjWdLWr75FJleCRM6AFBVwok5iR6iBFBhIKtM4vjCdWMkuAn1gdf5xmObuHg8IofCr8th5MJ7_Od7Fj4TVFPiBq0e1Dffs2GqzHmQ3HRPEToAOzFS8pgki7-er4Sk`,
+    serviceDataCenter: `${CDN}/AB6AXuBWDVwVMxuiW1EjXZRpF2-XfzO-PzXoVDoTorEKeDJmmAA_K-gLlbLKAlUHLJDZLS1z-7Mkk5c0Y44yuSamh5jUATfNi77EaM6vElN1vRDl_xJrfw2oae3qh6AYPBSaFUhiooMtP8OTGNsiA7EBLnwnKZvcm9EEwlQHYeaGKur7-ORUlG-2zGyvNfSZx4aM4HyZIu0cfRPPM1ZUdUWIOjSRxv0LE17NvS7zybIvxNst7SAhSkhBF6I`,
+    serviceSoftware: `${CDN}/AB6AXuDYP93BKi2g_4fAZ93moHVeQzwIGBtTRFEOjKzqgQtQvG7jrqk92lqsVdR3e308EcDFz8OgIm04QV1h6OyWi9Ox75ifF9JZTfMpJ0yOPOhe5f-cl-3fyr8RRjlneCmxjKvfezGQAcDQO8q9M-REQtfmI5B_MXoxKx3n7krkZ1Qg8ZDsNYvc2kf6iukvgU6HpXAo4d0eBlc3iRdGPGhGYbtKsrArb-Fulq1EoXBjipEONAhUgdOoZ64`,
+  },
+  services: {
+    electrical: `${CDN}/AB6AXuC4Tk1GuPRT4XvRAPJLYI-2EkigqgcWhOR9UHlSvZcH4ZOPh0fUmzNP9s6en76J9VtX6Va0nYc705h9tTcTILCHqhjt6RTyr6n3JJJWDu7s0O_Qi2JrbdrzPz4MlIN-y5-a0VscjzOsXuRLMzNka5D2AjUg9QCeXuWQAe6lXTafRTrWGhND7dH4Izo7XzKOyocTq_P7lnOjh_ZAZOuRWCZ9GjFQ4GQzBEbqVEjaZFrE6HZgzYxmBX0`,
+    dataCenter: `${CDN}/AB6AXuDXRUyGpEgMyr1CBrac8OwED75BJvI3QxvJzL_OZwK7O1dA1TQB2-3ynhM313Y42yN7x2y3J1_3yZZSw1L63WnjzOR2iMdmg1t9M_p7jaMhPm-rBxRZpzLCcU-r07ygr-SNdmTfV4x_3AKd4rN5ux-BGrClXkDfoosqhK3F3FGr6Z0V3MnAr28YQlMuKtQVO4C9DGioPi9EZ0rel5RRNUbeGZ114qAgucxshe1srw4d_cgB3iq1quo`,
+    constructionBuilding: `${CDN}/AB6AXuD78JxoLlCRIymnIjiabdpKiXb5sOnGjYd5uwqt5i08HdfwB63S0G8rfdBJZ7OSZ7qRnAJLvDQbBYGKd5uFTr9pyMvvRoghwBK90L8IRqbKHw8ereGwmQylYk4PgMa5bs2mN1pIBshLmRmnqYx2LQZ1k2hOBAcAdXJlZR9o9MRbDvLJ-532tlFa7t7JkbtDG0u9EU-GoT7Gb8TXc-kA4e-X8YlDKPZrH-PNb68VmD9zBM4EvZBD9gw`,
+    constructionRoad: `${CDN}/AB6AXuCN2jjjXVBFAuS0bOB9s9xMwC_OoGgnrJ1AccuBYcOjVgMzlqN4caWbsJfbuKFhZsqVQjyrcHQxFZpqK0x2P-CbzBqo4YY9zndBsBmY7gvTrid0pjoRjpmn7RtIkiYWT3m-gWQCf1BP4UzcWd1GWNDHRd9-QxDtWUgE2HxIK8H4ATy8xD_3o9JnGBkBaM_aONxtFBAo9pPaarFAmrt9mBpKAinfQxAvgyC57Ak6RR_alrEk2Jk5mLI`,
+  },
+  projects: {
+    networking: `${CDN}/AB6AXuACWbNDmC9igULvJPN2brCqwKaZrXa8bY-8cy64rd3xWP73XHSkcPr4C7xobjsYnlejawC2ldNF58MJTNHgUsYU8JRLfoO-k8deCHAuR5_0mhhat7diIuq7mQ7TweXvV82mXW9SRTSQfJZBVx6o2bixmmMQ51KkUnqufWvGsKtC6arZTwcxQhU5A5GcOJHLFx9wkiGgwxVvkpNrbQXC5WrWhlYi-_E95LPFnGSD21b_p4ut1ze0JIQ`,
+    solar: `${CDN}/AB6AXuC1lTss03zPV0e3j4diF6504qo3syZxnGCzogaRwWBvSPlaJl3FSI8qgmNsdlsSlQ9oQXV6PxwcCxT7zebKGEgpfQ7O1t-_At4eseKnqKpGY-apgdf6AnxGe4rG86tQJIZS-JYL8VQZ2tphFX_pv-78a935IXd5qRzGUUg_1q6eU_-TzYqRk6o-dIty5HEY2Fdg5ekUmDGPMxgV4wzueshNsOdJCmmfe5QYbr2VhfTORGXBb76HPCQ`,
+    hms: `${CDN}/AB6AXuDZcugnfqmHhLTO5IJC_or71OnD5LqTfwF3AQQUh0XMjDpIzYmJV8aLxjlGrF617dNS26n5RbCz-A8563e6qq99kyC7B6kTwstaDVcwIDPk0vnFsOoC-KV-o4DjuCXstuMEWlW1PeiCuYytqVyCNXZcA_KzA9S9AAFnKAtHKgztavCHGOr2PxCs4CTZvsVLik3aMcC9mymCkfAwi8dME8KAHjBs0jX6KRB6OfvpWurLvV6IFMKfBVE`,
+    smartCity: `${CDN}/AB6AXuCQglqRvMz3ZqhbDm4TWnTQjq8ugotEIE0r5y2fNcFq00rjeJEUDdXJmtCx-4jdSrz9Np52fPZ8ktaXNCVn9OLvW2co_oBi4xnCiExhdkiThJn5lz6nNV8Ys1dy59oJQrmkCqCQWHEMxgTneg9KnMOUUZ83-ASgdj4lRrWfHAe4HoRkSllunFs6FJYYb9J35UEaMI4YdpvWcqEHBipf9l8HlHdWoj8TT5rGPlyuAT7hagW8EFc_eV0`,
+  },
+  contact: {
+    map: `${CDN}/AB6AXuA1JI1fWaW7xb7hau9oX5phcmrJPTBGMEbeE0StMmeXTqL4RCoVEudF_VJbTrroygjm5N5OxkN5kWBJX2yBwUHiMo8DrVHzicxQAmk3r6EkwyqrUT7xd44rU43uhdWelpdfpxN6IR4uJCJYsWJjp0ZDt0SRbZeYU7uYq-uoDjEILPKjEM635LnrVsw8OVJhySQNZ6VPY_324KL_ckOlI6UWd4yCW4ojrFM2n_W7mWNDR2d8YIqAXuA`,
+  },
+} as const;

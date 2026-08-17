@@ -1,0 +1,121 @@
+import {
+  DraftingCompass,
+  Wrench,
+  Gauge,
+  SunMedium,
+  Cog,
+  Headset,
+  Server,
+  Network,
+  HardDrive,
+  Shield,
+  Cloud,
+  Building2,
+  Route,
+  Hammer,
+} from "lucide-react";
+import { images } from "@/data/images";
+import type { ServiceDivision } from "@/types";
+
+export const serviceDivisions: ServiceDivision[] = [
+  {
+    id: "electrical-engineering",
+    division: "Division 01",
+    title: "Electrical Engineering Services",
+    lead: "We design, install, and maintain reliable electrical and energy systems that ensure safe, efficient, and uninterrupted power for residential, commercial, and industrial facilities. Our expertise spans electrical infrastructure design, wiring, and maintenance, as well as customised solar power solutions, energy storage, and microgrid systems.",
+    textFirst: true,
+    features: [
+      { icon: DraftingCompass, title: "Design & Consultancy" },
+      { icon: Wrench, title: "Installation & Construction" },
+      { icon: Gauge, title: "Maintenance & Testing" },
+      { icon: SunMedium, title: "Power & Renewable Energy" },
+      { icon: Cog, title: "Automation & Control Systems" },
+      { icon: Headset, title: "Specialized & Support Services" },
+    ],
+    cta: { label: "Get a Quote", variant: "outline" },
+    media: {
+      kind: "image-badge",
+      image: images.services.electrical,
+      imageAlt: "Industrial electrical control room",
+      badge: {
+        position: "bl",
+        caption: "Renewable Energy",
+        value: "Solar & Storage",
+        small: true,
+      },
+    },
+  },
+  {
+    id: "data-center",
+    division: "Division 02",
+    title: "Data Center & Managed Services",
+    lead: "We deliver secure, scalable data center and cloud solutions that ensure reliable operations, optimised performance, and business continuity as your organisation grows. Through robust cloud infrastructure, expert server maintenance, virtualisation, and comprehensive backup and disaster recovery, we enable efficient data storage, maximum uptime, and the protection of critical business information.",
+    textFirst: false,
+    miniCards: [
+      { icon: Server, title: "Infrastructure Management", description: "Redundant power, cooling, and racking solutions." },
+      { icon: Network, title: "Network & Connectivity", description: "High-throughput, resilient enterprise connectivity." },
+      { icon: HardDrive, title: "Server & Virtualization", description: "Server maintenance and virtualisation at scale." },
+      { icon: Shield, title: "Data Security", description: "Access control, monitoring, and compliance." },
+      { icon: Cloud, title: "Cloud Integration", description: "Hybrid and multi-cloud management frameworks." },
+      { icon: Headset, title: "Support & Service", description: "24/7 monitoring and proactive management." },
+    ],
+    media: {
+      kind: "image-badge",
+      image: images.services.dataCenter,
+      imageAlt: "Futuristic data center aisle",
+      badge: {
+        position: "tr",
+        caption: "Data Centre",
+        value: "24/7 Monitoring",
+        small: true,
+      },
+    },
+  },
+  {
+    id: "software-development",
+    division: "Division 03",
+    title: "Software Development",
+    lead: "We deliver custom software that empowers businesses with efficient, scalable, and future-ready technology tailored to their needs. We build custom web and mobile applications, ERP systems, and document management solutions — leveraging advanced technologies such as AI and machine learning, and supporting our solutions with corporate training.",
+    textFirst: true,
+    steps: [
+      "Custom Software Solutions",
+      "Web & Mobile App Development",
+      "Software Consulting & Integration",
+      "Cloud & DevOps Services",
+      "UI/UX Design & QA",
+      "Support & Maintenance",
+    ],
+    cta: { label: "Get a Quote", variant: "solid" },
+    media: { kind: "code" },
+  },
+  {
+    id: "construction",
+    division: "Division 04",
+    title: "Building & Road Construction",
+    lead: "We deliver high-quality construction and civil engineering solutions that strengthen infrastructure, improve community connectivity, and support sustainable development. With expert planning, execution, and maintenance, we manage projects of all scales — from simple structures to complex infrastructure.",
+    textFirst: false,
+    iconBoxes: [
+      {
+        icon: Building2,
+        title: "Commercial & Residential",
+        description: "Developments and complexes designed for modern living and working.",
+      },
+      {
+        icon: Route,
+        title: "Highway & Urban Road Works",
+        description: "Highway engineering and urban road construction built to last.",
+      },
+      {
+        icon: Wrench,
+        title: "Maintenance Services",
+        description: "Planned and responsive maintenance across built infrastructure.",
+      },
+      {
+        icon: Hammer,
+        title: "Bridge Repairs",
+        description: "Structural repair and rehabilitation of bridges and crossings.",
+      },
+    ],
+    media: { kind: "construction" },
+  },
+];
