@@ -116,7 +116,7 @@ export function ContactForm() {
             <input
               {...field("fullName")}
               type="text"
-              placeholder="John Doe"
+              placeholder="Full Name"
               autoComplete="name"
               required
               aria-required="true"
@@ -137,7 +137,7 @@ export function ContactForm() {
             <input
               {...field("company")}
               type="text"
-              placeholder="Global Enterprise Inc."
+              placeholder="Company Name"
               autoComplete="organization"
             />
           </div>
@@ -151,7 +151,7 @@ export function ContactForm() {
             <input
               {...field("email")}
               type="email"
-              placeholder="j.doe@company.com"
+              placeholder="email address"
               autoComplete="email"
               required
               aria-required="true"
@@ -187,7 +187,7 @@ export function ContactForm() {
           <textarea
             {...field("message")}
             rows={6}
-            placeholder="Briefly describe your requirements..."
+            placeholder="Briefly describe your requirements for further engagement..."
             required
             aria-required="true"
             aria-invalid={!!errors.message}

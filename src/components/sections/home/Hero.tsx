@@ -43,7 +43,7 @@ export function Hero() {
 
       <Container className="relative z-20 py-20">
         <div className="hero-stagger max-w-3xl">
-          <span className="eyebrow">LEF SIGNATURE LIMITED</span>
+          <span className="eyebrow">LEF SIGNATURE Ltd</span>
           <h1 className="h-display my-4 text-primary md:my-6">
             Driving Progress Through Technology &amp; Engineering Excellence.
           </h1>

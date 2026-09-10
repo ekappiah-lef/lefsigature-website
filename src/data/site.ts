@@ -5,7 +5,7 @@
  */
 export const siteConfig = {
   name: "LEF Signature",
-  legalName: "LEF Signature Limited",
+  legalName: "LEF Signature Ltd",
   url:
     process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ??
     "https://lefsignature.com",
