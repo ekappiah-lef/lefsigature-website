@@ -33,4 +33,5 @@ export const clients: ClientLogo[] = [
   { src: `${dir}/Germany_trade-removebg-preview.png`, name: "Germany Trade & Invest" },
   { src: `${dir}/minstry_of_trade-removebg-preview.png`, name: "Ministry of Trade" },
   { src: `${dir}/download-removebg-preview.png`, name: "Partner" },
+  { src: `${dir}/atlogo-removebg-preview.png`, name: "AT Ghana" }
 ];
