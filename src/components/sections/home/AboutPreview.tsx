@@ -15,7 +15,7 @@ export function AboutPreview() {
               <div className="relative h-[420px] w-full overflow-hidden rounded-[14px] md:h-[500px]">
                 <Image
                   src={images.home.about}
-                  alt="Senior LEF Signature engineer monitoring systems in a high-tech control room"
+                  alt="LEF Signature engineer inspecting an ATS control panel on site"
                   fill
                   sizes="(min-width: 768px) 50vw, 100vw"
                   className="object-cover"

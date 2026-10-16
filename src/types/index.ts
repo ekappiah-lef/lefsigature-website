@@ -70,11 +70,11 @@ export interface FloatingBadge {
   small?: boolean;
 }
 
-export type ProjectCategory =
-  | "Construction"
-  | "Infrastructure"
-  | "ICT"
-  | "Electrical";
+export type ProjectCategory = "Data Centre" | "ICT" | "Electrical" | "Solar";
+
+export type ProjectMedia =
+  | { type: "image"; src: string }
+  | { type: "video"; src: string; poster?: string };
 
 export interface Project {
   index: string;
@@ -82,11 +82,16 @@ export interface Project {
   eyebrow: string;
   title: string;
   description?: string;
+  /** Thumbnail shown in the grid. */
   image: string;
   imageAlt: string;
+  /** Photos and videos shown when the project is expanded (first is the lead item). */
+  gallery: ProjectMedia[];
+  client?: string;
+  location?: string;
+  year?: string;
   /** Grid span on desktop: wide (8/12) or narrow (4/12). */
   span: "wide" | "narrow";
-  hasOverlay: boolean;
 }
 
 export interface ProcessStep {

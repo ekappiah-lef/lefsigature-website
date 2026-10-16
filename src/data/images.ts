@@ -11,10 +11,13 @@ const CDN = "https://lh3.googleusercontent.com/aida-public";
 export const images = {
   home: {
     hero: `${CDN}/AB6AXuAhKvT9w8yFm9MMv-k-KKjA13GAHUuQGlvtus-rFXI5Iq1NZrsk1hc6Ihct_lmvsTYNEtWEL4DfUKA4DMlnoe4tk27QLZfMzRGOWwLIcGanqK0F859cJEOLL3onALfwZyvE8qmH7O0u2p0H9bQgf0jeTwLurJZ0gR2e_d2vQoaiwFIR_FqKz1pm-bwhUmjpdrdnAr0yEaUohLLfYv0EjtPrTzb_pVGUs3vPkkMJbNUDSplCjoS_nug`,
-    about: `${CDN}/AB6AXuBVOFi2XjZs2NiZ0ZxIsnQD2ajfYivHEowKQhYAf-x0y6Am2a6LZ6QeEsO9Zzw8pPa8rQX8yK2yg3GQ0Si3bmpD6wiHDeYz00Z63NBgW9OnbRc1pKxxMMT_O598PAhKvjDEoTz5rlwHWTfHrnU0cDI14OpDuDuVH5eUsvBq4h8gjOAfH7yyZ50MVBC8-5LYS5EPozvBbybyyY842qK_PUXIbu8wvAp3awvdoVzbTqfIN9exHVhhV2g`,
+    about: "/images/home-about.jpg",
     serviceElectrical: `${CDN}/AB6AXuDd0rskFE9ODKyLaNQV5rGmRuh9RgNAzav9tF5dnKjqEI15sDfFEWznTE3DZmtMxlG-2AKDZcbkjGt3VWUYrD2oVAhGYqm3tP_WAgHg4mP1CAHfIgTmx684MxAjWdLWr75FJleCRM6AFBVwok5iR6iBFBhIKtM4vjCdWMkuAn1gdf5xmObuHg8IofCr8th5MJ7_Od7Fj4TVFPiBq0e1Dffs2GqzHmQ3HRPEToAOzFS8pgki7-er4Sk`,
     serviceDataCenter: `${CDN}/AB6AXuBWDVwVMxuiW1EjXZRpF2-XfzO-PzXoVDoTorEKeDJmmAA_K-gLlbLKAlUHLJDZLS1z-7Mkk5c0Y44yuSamh5jUATfNi77EaM6vElN1vRDl_xJrfw2oae3qh6AYPBSaFUhiooMtP8OTGNsiA7EBLnwnKZvcm9EEwlQHYeaGKur7-ORUlG-2zGyvNfSZx4aM4HyZIu0cfRPPM1ZUdUWIOjSRxv0LE17NvS7zybIvxNst7SAhSkhBF6I`,
     serviceSoftware: `${CDN}/AB6AXuDYP93BKi2g_4fAZ93moHVeQzwIGBtTRFEOjKzqgQtQvG7jrqk92lqsVdR3e308EcDFz8OgIm04QV1h6OyWi9Ox75ifF9JZTfMpJ0yOPOhe5f-cl-3fyr8RRjlneCmxjKvfezGQAcDQO8q9M-REQtfmI5B_MXoxKx3n7krkZ1Qg8ZDsNYvc2kf6iukvgU6HpXAo4d0eBlc3iRdGPGhGYbtKsrArb-Fulq1EoXBjipEONAhUgdOoZ64`,
+  },
+  about: {
+    team: "/images/about-team.jpg",
   },
   services: {
     electrical: `${CDN}/AB6AXuC4Tk1GuPRT4XvRAPJLYI-2EkigqgcWhOR9UHlSvZcH4ZOPh0fUmzNP9s6en76J9VtX6Va0nYc705h9tTcTILCHqhjt6RTyr6n3JJJWDu7s0O_Qi2JrbdrzPz4MlIN-y5-a0VscjzOsXuRLMzNka5D2AjUg9QCeXuWQAe6lXTafRTrWGhND7dH4Izo7XzKOyocTq_P7lnOjh_ZAZOuRWCZ9GjFQ4GQzBEbqVEjaZFrE6HZgzYxmBX0`,

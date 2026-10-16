@@ -55,8 +55,8 @@ export default function AboutPage() {
               <div className="about-img-frame">
                 <div className="relative h-[420px] w-full overflow-hidden rounded-[14px] md:h-[500px]">
                   <Image
-                    src={images.home.about}
-                    alt="LEF Signature engineer monitoring systems in a high-tech control room"
+                    src={images.about.team}
+                    alt="The LEF Signature team on site beside branded company vehicles"
                     fill
                     sizes="(min-width: 768px) 50vw, 100vw"
                     className="object-cover"

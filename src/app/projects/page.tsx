@@ -11,7 +11,7 @@ import { breadcrumbSchema } from "@/lib/structured-data";
 export const metadata: Metadata = buildMetadata({
   title: "Projects",
   description:
-    "Projects we've delivered across Ghana   road construction in Tamale, the Peak Logistics Center in Takoradi, Angela Residence, the Kumasi water line, and data centre works.",
+    "Projects delivered by LEF Signature across Ghana — fibre provision for MPS Ghana, data centre maintenance for AirtelTigo and MTN, electrical works, and solar power installations.",
   path: "/projects",
 });
 

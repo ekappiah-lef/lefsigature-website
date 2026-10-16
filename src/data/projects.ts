@@ -6,78 +6,119 @@ import {
   ClipboardCheck,
   Headset,
 } from "lucide-react";
-import type { ProcessStep, Project, ProjectCategory } from "@/types";
+import type { ProcessStep, Project, ProjectCategory, ProjectMedia } from "@/types";
 
-const WIX = "https://static.wixstatic.com/media";
+/**
+ * PROJECT MEDIA.
+ * Photos and videos live in `public/images/projects/<folder>/`, named
+ * `<folder>-<n>.jpg` and `<folder>-video-<n>.mp4`. To add more, drop files in
+ * the folder and bump the counts below.
+ */
+const base = "/images/projects";
+
+function media(folder: string, photos: number, videos = 0): ProjectMedia[] {
+  const items: ProjectMedia[] = Array.from({ length: photos }, (_, i) => ({
+    type: "image" as const,
+    src: `${base}/${folder}/${folder}-${i + 1}.jpg`,
+  }));
+  for (let i = 1; i <= videos; i++) {
+    items.push({
+      type: "video",
+      src: `${base}/${folder}/${folder}-video-${i}.mp4`,
+      poster: items[0]?.src,
+    });
+  }
+  return items;
+}
+
+const cover = (folder: string, n = 1) => `${base}/${folder}/${folder}-${n}.jpg`;
 
 export const projectFilters: Array<{ label: string; value: ProjectCategory | "all" }> = [
   { label: "All Projects", value: "all" },
-  { label: "Construction", value: "Construction" },
-  { label: "Infrastructure", value: "Infrastructure" },
+  { label: "Data Centre", value: "Data Centre" },
   { label: "ICT", value: "ICT" },
+  { label: "Electrical", value: "Electrical" },
+  { label: "Solar", value: "Solar" },
 ];
 
-/** Featured projects   sourced from lefsignature.com/projects. */
+/** LEF Signature projects. */
 export const projects: Project[] = [
   {
     index: "01",
-    category: "Construction",
-    eyebrow: "Construction • Tamale",
-    title: "Road Construction   Tamale",
-    image: `${WIX}/89238f5335504d239408fb381de8c4cb.jpg`,
-    imageAlt: "Road construction project in Tamale",
+    category: "ICT",
+    eyebrow: "ICT • Fibre • MPS Ghana",
+    title: "Fibre Provision & Installation — MPS Ghana",
+    description:
+      "Provision and installation of fibre-optic infrastructure for MPS Ghana, delivering reliable high-capacity connectivity.",
+    client: "MPS Ghana",
+    image: cover("mps-fibre"),
+    imageAlt: "Fibre-optic network infrastructure installation",
+    gallery: media("mps-fibre", 5, 1),
     span: "wide",
-    hasOverlay: true,
   },
   {
     index: "02",
-    category: "Construction",
-    eyebrow: "Construction • Takoradi",
-    title: "Peak Logistics Center   Takoradi",
-    image: `${WIX}/c837a6_a0437352f7d84bb3b239f03685fb93a7~mv2.jpg`,
-    imageAlt: "Peak Logistics Center building in Takoradi",
+    category: "Data Centre",
+    eyebrow: "Data Centre • AirtelTigo",
+    title: "AirtelTigo Data Centre — HVAC & Power Maintenance",
+    description:
+      "Mechanical/HVAC, air-conditioning, and power-systems maintenance for the AirtelTigo data centre, keeping critical infrastructure running reliably.",
+    client: "AirtelTigo",
+    image: cover("airteltigo-datacentre"),
+    imageAlt: "Data centre cooling and power infrastructure",
+    gallery: media("airteltigo-datacentre", 15, 1),
     span: "narrow",
-    hasOverlay: true,
   },
   {
     index: "03",
-    category: "Construction",
-    eyebrow: "Construction • Residential",
-    title: "Angela Residence",
-    image: `${WIX}/c837a6_10bfdb7a1c1641008cb8fcc355dbb9b9~mv2.jpg`,
-    imageAlt: "Angela Residence residential building",
+    category: "Data Centre",
+    eyebrow: "Data Centre • MTN Ghana",
+    title: "MTN Ghana Data Centre — Passive Maintenance",
+    description:
+      "Passive infrastructure maintenance for the MTN Ghana data centre, ensuring environmental and structural systems perform to standard.",
+    client: "MTN Ghana",
+    image: cover("mtn-datacentre"),
+    imageAlt: "Engineer maintaining data centre infrastructure",
+    gallery: media("mtn-datacentre", 9),
     span: "narrow",
-    hasOverlay: false,
   },
   {
     index: "04",
-    category: "Infrastructure",
-    eyebrow: "Infrastructure • Kumasi",
-    title: "Kumasi Water Line",
-    image: `${WIX}/c837a6_ebccae6fc1bb403198d95cc3b687306a~mv2.jpg`,
-    imageAlt: "Kumasi water line civil infrastructure works",
+    category: "Electrical",
+    eyebrow: "Electrical • Accra",
+    title: "Airport Residential — Electrical Works",
+    description:
+      "Complete electrical installation and works for a property at Airport Residential, Accra.",
+    location: "Airport Residential, Accra",
+    image: cover("airport-residential"),
+    imageAlt: "Electrical installation works on site",
+    gallery: media("airport-residential", 4),
     span: "wide",
-    hasOverlay: false,
   },
   {
     index: "05",
-    category: "ICT",
-    eyebrow: "ICT • Data Centre",
-    title: "Data Center Monitoring",
-    image: `${WIX}/11062b_96e3089f5908483db9dcf2feb5d1d405~mv2.jpeg`,
-    imageAlt: "Engineer monitoring a data centre",
-    span: "narrow",
-    hasOverlay: true,
+    category: "Solar",
+    eyebrow: "Solar • Water • Assewa",
+    title: "Solar-Powered Water Pumping Station — Assewa",
+    description:
+      "A community solar-powered water pumping station at Assewa, providing a clean, sustainable water supply.",
+    location: "Assewa",
+    image: cover("assewa-water"),
+    imageAlt: "Solar panel array powering a water pumping station",
+    gallery: media("assewa-water", 5),
+    span: "wide",
   },
   {
     index: "06",
-    category: "Infrastructure",
-    eyebrow: "Infrastructure • Roadworks",
-    title: "Road Construction",
-    image: `${WIX}/11062b_54b807a15b784a148c4d2ab7e6942ea7~mv2.jpeg`,
-    imageAlt: "Highway road construction works",
+    category: "Solar",
+    eyebrow: "Solar • Residential & Commercial",
+    title: "Solar Installation — Residential & Commercial",
+    description:
+      "Design and installation of solar power systems for residential and commercial clients.",
+    image: cover("solar-installation"),
+    imageAlt: "Rooftop solar panel installation",
+    gallery: media("solar-installation", 6),
     span: "narrow",
-    hasOverlay: false,
   },
 ];
 
